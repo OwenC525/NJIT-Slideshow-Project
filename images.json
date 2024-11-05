@@ -1,82 +1,64 @@
 {
     "images": [
         {
-            "imgPath": "img/places/australia.jpg",
-            "imgLocation": "Australia",
-            "description": "Loch Ard Gorge",
-            "date": "01/01/2016"
+            "imgPath": "img/places/lake-baikal.jpg",
+            "imgLocation": "Lake Baikal",
+            "description": "Lake Baikal is an ancient, massive lake in the mountainous Russian region of Siberia.",
+            "country": "Russia"
         },
         {
-            "imgPath": "img/places/austria.jpg",
-            "imgLocation": "Austria",
-            "description": "Austrian chapel",
-            "date": "01/02/2016"
+            "imgPath": "img/places/melissani-lake.jpeg",
+            "imgLocation": "Melissani Lake",
+            "description": "Melissani Lake is a cave and cenote located on the island of Kefalonia, northwest of Sami.",
+            "country": "Greece"
         },
         {
-            "imgPath": "img/places/france.jpg",
-            "imgLocation": "Paris",
-            "description": "Eiffel Tower",
-            "date": "01/03/2016"
+            "imgPath": "img/places/lake-natron.jpg",
+            "imgLocation": "Lake Natron",
+            "description": "Lake Natron is a mineral-rich soda lake with hellish 120-degree temperatures and dangerously low pH levels.",
+            "country": "Africa"
         },
         {
-            "imgPath": "img/places/greece.jpg",
-            "imgLocation": "Greece",
-            "description": "Greek coastline",
-            "date": "01/04/2016"
+            "imgPath": "img/places/kayangan-lake.jpg",
+            "imgLocation": "Kayangan Lake",
+            "description": "Kayangan Lake is a brackish lake on Coron Island in the Philippines, maintained by the local Tagbanwa people",
+            "country": "Philippines"
         },
         {
-            "imgPath": "img/places/hungary.jpg",
-            "imgLocation": "Hungary",
-            "description": "Budapest skyline",
-            "date": "01/05/2016"
+            "imgPath": "img/places/Jokulsarlon.jpg",
+            "imgLocation": "Jokulsarlon Lake",
+            "description": "Jökulsárlón is a glacial lagoon, Its still, blue waters are dotted with icebergs from the surrounding Breiðamerkurjökull Glacier.",
+            "country": "Iceland"
         },
         {
-            "imgPath": "img/places/india.jpg",
-            "imgLocation": "India",
-            "description": "Taj Mahal",
-            "date": "01/06/2016"
+            "imgPath": "img/places/lake-eacham.jpg",
+            "imgLocation": "Lake Eacham",
+            "description": "Lake Eacham is a volcanic crater lake. It support several types of upland rainforest and a wide range of flora and fauna.",
+            "country": "Queensland, Australia"
         },
         {
-            "imgPath": "img/places/italy.jpg",
-            "imgLocation": "Italy",
-            "description": "Venice",
-            "date": "01/07/2016"
+            "imgPath": "img/places/lake-nakuru.jpg",
+            "imgLocation": "Lake Nakuru",
+            "description": "Lake Nakuru is one of the Rift Valley lakes. The lake's abundance of algae used to attract a vast quantity of flamingos that famously lined the shore.",
+            "country": "Kenya"
         },
         {
-            "imgPath": "img/places/japan.jpg",
-            "imgLocation": "Japan",
-            "description": "Hirosaki Castle",
-            "date": "01/08/2016"
+            "imgPath": "img/places/lake_kawaguchi.jpg",
+            "imgLocation": "Lake Kawaguchi",
+            "description": "Lake Kawaguchi is the second largest of the Fuji Five Lakes in terms of surface area, and is located at the lowest elevation.",
+            "country": "Japan"
         },
         {
-            "imgPath": "img/places/korea.jpg",
-            "imgLocation": "South Korea",
-            "description": "Seoul",
-            "date": "01/09/2016"
+            "imgPath": "img/places/lake-bacalar.jpg",
+            "imgLocation": "Lake Bacalar",
+            "description": "Lake Bacalar is a long, narrow freshwater lake in the state of Quintana Roo, Mexico near Mexico's border with Belize.",
+            "country": "Mexico"
         },
         {
-            "imgPath": "img/places/norway.jpg",
-            "imgLocation": "Norway",
-            "description": "Countryside mountains",
-            "date": "01/10/2016"
-        },
-        {
-            "imgPath": "img/places/switzerland.jpg",
-            "imgLocation": "Switzerland",
-            "description": "Lake castle",
-            "date": "01/11/2016"
-        },
-        {
-            "imgPath": "img/places/thailand.jpg",
-            "imgLocation": "Thailand",
-            "description": "Beachline",
-            "date": "01/12/2016"
-        },
-        {
-            "imgPath": "img/places/turkey.jpg",
-            "imgLocation": "Turkey",
-            "description": "Istanbul",
-            "date": "01/13/2016"
+            "imgPath": "img/places/Crater_lake.jpg",
+            "imgLocation": "Crater Lake",
+            "description": "Crater Lake lies inside a caldera. Because the lake is filled almost entirely by snowfall, it is one of the clearest lakes in the world.",
+            "country": "Oregon"
         }
   ]
 }
