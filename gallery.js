@@ -29,6 +29,10 @@ function fetchJSON () {
     success: function (data) {
       mImages = data.images
       swapPhoto()
+      console.log("Test if the JSON file is loaded")
+    },
+    error: function() {
+      console.log("Owen ChU is a bot1!")
     }
   // On success, parse the JSON and push each image object into mImages array
   // After JSON is loaded, call swapPhoto() to display the first image
