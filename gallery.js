@@ -9,8 +9,15 @@ $(document).ready(() => {
   // Call a function here to start the timer for the slideshow
 
   // Select the moreIndicator button and add a click event to:
+    $('.moreIndicator').on('click', function () {
+
   // - toggle the rotation classes (rot90 and rot270)
+  $('.moreIndicator').toggleClass('rot90 ');
+
   // - slideToggle the visibility of the .details section
+  $('.details').slideToggle()
+
+    })
 
   // Select the "Next Photo" button and add a click event to call showNextPhoto
 
@@ -41,9 +48,13 @@ function fetchJSON () {
 
 // Function to swap and display the next photo in the slideshow
 function swapPhoto () {
-  // Access mImages[mCurrentIndex] to update the image source and details
-  // Update the #photo element's src attribute with the current image's path
-  // Update the .location, .description, and .date elements with the current image's details
+  if (mImages.length > 0) {            // Access mImages[mCurrentIndex] to update the image source and details
+    const firstImage = mImages[0];     // Update the #photo element's src attribute with the current image's path
+    $('#photo').attr('src', firstImage.imgPath);   // Update the .location, .description, and .date elements with the current image's details
+    $('.location').text(firstImage.imgLocation);
+    $('.description').text(firstImage.description);
+    $('.date').text(firstImage.country);
+  }
 }
 
 // Advances to the next photo, loops to the first photo if the end of array is reached
