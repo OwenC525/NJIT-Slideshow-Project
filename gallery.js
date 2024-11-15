@@ -7,15 +7,15 @@ $(document).ready(() => {
   $('.details').hide() // Hide details initially
 
   // Call a function here to start the timer for the slideshow
-  startTimer()
+  startTimer();
   // Select the moreIndicator button and add a click event to:
     $('.moreIndicator').on('click', function () {
 
   // - toggle the rotation classes (rot90 and rot270)
-  $('.moreIndicator').toggleClass('rot90 ');
+      $('.moreIndicator').toggleClass('rot90');
 
   // - slideToggle the visibility of the .details section
-  $('.details').slideToggle()
+      $('.details').slideToggle();
 
     })
 
@@ -30,14 +30,19 @@ $(document).ready(() => {
 })
 
 // Function to fetch JSON data and store it in mImages
-function fetchJSON () {
+function fetchJSON() {
   // Use $.ajax here to request the JSON data from mUrl
   $.ajax({
     url: mUrl,
-    dataType: "json",
+    dataType: 'json',
     success: function (data) {
       mImages = data.images
-      swapPhoto()
+      const image = mImages[mCurrentIndex];
+      $('#photo').attr('src', image.imgPath);
+      $('.location').text(`Location: ${image.imgLocation}`);
+      $('.description').text(`Description: ${image.description}`);
+      $('.date').text(`Date: ${image.country}`);
+
       console.log("Test if the JSON file is loaded")
     },
     error: function() {
@@ -49,13 +54,14 @@ function fetchJSON () {
 }
 
 // Function to swap and display the next photo in the slideshow
-function swapPhoto () {
-  const images =  mImages[mCurrentIndex];            // Access mImages[mCurrentIndex] to update the image source and details
-    const firstImage = mImages[0];     // Update the #photo element's src attribute with the current image's path
-    $('#photo').attr('src', firstImage.imgPath);   // Update the .location, .description, and .date elements with the current image's details
-    $('.location').text(firstImage.imgLocation);
-    $('.description').text(firstImage.description);
-    $('.date').text(firstImage.country);
+function swapPhoto() {
+  
+  const image = mImages[mCurrentIndex];            // Access mImages[mCurrentIndex] to update the image source and details
+  console.log(image.imgPath);    // Update the #photo element's src attribute with the current image's path
+    $('#photo').attr('src', image.imgPath);   // Update the .location, .description, and .date elements with the current image's details
+    $('.location').text(image.imgLocation);
+    $('.description').text(image.description);
+    $('.date').text(image.country);
   
 }
 
@@ -64,12 +70,10 @@ function showNextPhoto() {
   // Increment mCurrentIndex and call swapPhoto()
   mCurrentIndex++;
   // Ensure it loops back to the beginning if mCurrentIndex exceeds array length
-  if (mCurrentIndex == mImages.length){
+  if (mCurrentIndex == mImages.length) {
     mCurrentIndex = 0; 
   }
-
-  swapPhoto();
-
+  swapPhoto()
 }
 
 // Goes to the previous photo, loops to the last photo if mCurrentIndex goes negative
