@@ -13,6 +13,9 @@ body {
     width: 90%; /* Keeps width responsive */
     margin: auto;
     background-color: rgba(255, 255, 255, 0.9);
+    border-style: double;
+    border-color: #000;
+    border-width: 8px;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
 }
@@ -25,19 +28,22 @@ body {
 
 /* Style for the photo displayed in the slideshow */
 .thumbnail {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
+    width: 456px;
+    height: 360px;
     border-radius: 4px;
     /* Optional: Add shadow here */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 /* Style for the title/banner */
 .banner {
-    font-size: 2rem; /* Increased font size for better readability */
+    font-size: 2.25rem; /* Increased font size for better readability */
     font-weight: bold;
     color: #333;
     /* Optional: Customize the text color */
+    font-family: "IM Fell Double Pica", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* Style for the 'More Content' indicator */
@@ -64,7 +70,11 @@ body {
     background-color: #f8f9fa; /* Light background to distinguish from main area */
     border-radius: 4px;
     color: #333;
-    font-size: 1rem; /* Slightly larger text for readability */
+    font-size: 1.15rem; /* Slightly larger text for readability */
+    /*custom font*/
+    font-family: "Neucha", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* Style for each paragraph in details */
