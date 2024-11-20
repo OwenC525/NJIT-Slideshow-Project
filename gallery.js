@@ -1,6 +1,6 @@
 let mCurrentIndex = 0 // Tracks the current image index
 let mImages = [] // Array to hold GalleryImage objects
-const mUrl = 'https://api.npoint.io/bf614bbdb107057c29cf' // Replace with actual JSON URL
+const mUrl = 'images.json' // Replace with actual JSON URL
 const mWaitTime = 5000 // Timer interval in milliseconds
 
 $(document).ready(() => {
@@ -39,14 +39,14 @@ function fetchJSON() {
       mImages = data.images
       const image = mImages[mCurrentIndex];
       $('#photo').attr('src', image.imgPath);
-      $('.location').text(`Location: ${image.imgLocation}`);
-      $('.description').text(`Description: ${image.description}`);
-      $('.date').text(`Date: ${image.country}`);
+      $('.location').text(`${image.imgLocation}`);
+      $('.description').text(`${image.description}`);
+      $('.country').text(`${image.country}`);
 
       console.log("Test if the JSON file is loaded")
     },
     error: function() {
-      console.log("Owen ChU is a bot1!")
+      console.log("error!")
     }
   // On success, parse the JSON and push each image object into mImages array
   // After JSON is loaded, call swapPhoto() to display the first image
@@ -61,7 +61,7 @@ function swapPhoto() {
     $('#photo').attr('src', image.imgPath);   // Update the .location, .description, and .date elements with the current image's details
     $('.location').text(image.imgLocation);
     $('.description').text(image.description);
-    $('.date').text(image.country);
+    $('.country').text(image.country);
   
 }
 

@@ -55,6 +55,20 @@ body {
     /* Add initial rotation styling here */
 }
 
+#nextPhoto:active {
+    border-radius: 40px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  transform: translateY(1px);
+  transition: transform 0.1s;
+}
+
+#prevPhoto:active {
+    border-radius: 40px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  transform: translateY(1px) rotate(180deg);
+  transition: transform 0.1s;
+}
+
 /* Navigation button styles */
 #nav img {
     height: 50px; /* Adjust button size for responsiveness */
